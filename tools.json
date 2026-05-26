@@ -1,0 +1,95 @@
+{
+  "categories": [
+    {
+      "id": "hosting",
+      "name": "Hosting",
+      "items": [
+        {"name":"Vercel","desc":"Static + serverless hosting. 100GB bandwidth, 6000 build mins. Hobby plan is free.","free":"100GB/mo","url":"https://vercel.com","color":"emerald"},
+        {"name":"Netlify","desc":"Static hosting with 100GB bandwidth, 300 build mins. Serverless functions included.","free":"100GB/mo","url":"https://netlify.com","color":"emerald"},
+        {"name":"Railway","desc":"$5 credit monthly. Deploy any Docker container. No cold starts.","free":"$5 credit","url":"https://railway.app","color":"violet"},
+        {"name":"Render","desc":"Static sites free. Web services from $0 with 750hrs runtime. PostgreSQL $0 with 1GB.","free":"750hrs/mo","url":"https://render.com","color":"violet"},
+        {"name":"Fly.io","desc":"Run full-stack apps close to users. 3 shared VMs free. Pay-as-you-go after.","free":"3 VMs","url":"https://fly.io","color":"violet"},
+        {"name":"Cloudflare Pages","desc":"Unlimited bandwidth for static sites. Workers free tier with 100k requests/day.","free":"Unlimited","url":"https://pages.cloudflare.com","color":"amber"}
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "items": [
+        {"name":"Supabase","desc":"Postgres with 500MB database, 50MB file storage, 2GB bandwidth. Auth + realtime included.","free":"500MB","url":"https://supabase.com","color":"emerald"},
+        {"name":"PlanetScale","desc":"MySQL-compatible serverless DB. 1B row reads, 10M writes, 5GB storage.","free":"5GB","url":"https://planetscale.com","color":"violet"},
+        {"name":"Neon","desc":"Serverless Postgres. 0.5GB storage, 100 compute hrs, branching included.","free":"0.5GB","url":"https://neon.tech","color":"emerald"},
+        {"name":"Turso","desc":"SQLite on the edge. 500 databases, 9GB storage, 1B row reads. Ultra-low latency.","free":"9GB","url":"https://turso.tech","color":"violet"},
+        {"name":"MongoDB Atlas","desc":"512MB shared cluster. Perfect for prototyping and small apps.","free":"512MB","url":"https://mongodb.com/atlas","color":"emerald"}
+      ]
+    },
+    {
+      "id": "auth",
+      "name": "Auth",
+      "items": [
+        {"name":"Clerk","desc":"Complete auth with 10,000 MAU free. Social login, MFA, organizations included.","free":"10K MAU","url":"https://clerk.com","color":"violet"},
+        {"name":"Lucia Auth","desc":"Open-source auth library. Self-hosted. No limits. Works with any database.","free":"Unlimited","url":"https://lucia-auth.com","color":"emerald"},
+        {"name":"Better Auth","desc":"Open-source auth for TypeScript. Self-hosted. Framework-agnostic.","free":"Unlimited","url":"https://better-auth.com","color":"emerald"},
+        {"name":"Auth0","desc":"25,000 MAU free. Enterprise-grade auth with SSO, MFA, passwordless.","free":"25K MAU","url":"https://auth0.com","color":"amber"}
+      ]
+    },
+    {
+      "id": "email-communication",
+      "name": "Email & Communication",
+      "items": [
+        {"name":"Resend","desc":"100 emails/day free. Modern email API for developers. React email templates.","free":"100/day","url":"https://resend.com","color":"emerald"},
+        {"name":"SendGrid","desc":"100 emails/day free via Twilio. SMTP and API delivery.","free":"100/day","url":"https://sendgrid.com","color":"blue"},
+        {"name":"Loops","desc":"Transactional email for SaaS. 1,000 contacts free. Great onboarding sequences.","free":"1K contacts","url":"https://loops.so","color":"violet"},
+        {"name":"Brevo","desc":"300 emails/day. Marketing + transactional in one platform. Unlimited contacts.","free":"300/day","url":"https://brevo.com","color":"blue"}
+      ]
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics",
+      "items": [
+        {"name":"Plausible","desc":"Privacy-first analytics. Self-hosted option is completely free. No cookies.","free":"Self-host free","url":"https://plausible.io","color":"emerald"},
+        {"name":"Umami","desc":"Open-source Google Analytics alternative. Self-host for free. Clean dashboard.","free":"Self-host free","url":"https://umami.is","color":"emerald"},
+        {"name":"PostHog","desc":"1M events/month free. Product analytics, session replay, feature flags, A/B testing.","free":"1M events","url":"https://posthog.com","color":"amber"},
+        {"name":"Tinybird","desc":"Real-time analytics API. 1,000 API reqs/day, 10GB processed data.","free":"1K reqs/day","url":"https://tinybird.co","color":"violet"}
+      ]
+    },
+    {
+      "id": "ai-llms",
+      "name": "AI & LLMs",
+      "items": [
+        {"name":"Groq","desc":"Free LLM API. Ultra-fast inference for open models. No rate limits on free tier.","free":"Free API","url":"https://groq.com","color":"emerald"},
+        {"name":"Google AI Studio","desc":"Gemini 2.5 Flash free tier. 1,500 requests/day. 1M token context.","free":"1500/day","url":"https://aistudio.google.com","color":"blue"},
+        {"name":"Together AI","desc":"$5 free credit. Run open-source models: Llama, Mistral, DeepSeek.","free":"$5 credit","url":"https://together.ai","color":"violet"},
+        {"name":"DeepSeek API","desc":"Cheapest paid API. V3 at $0.27/1M input tokens. No free tier but costs pennies.","free":"Pay-as-you-go","url":"https://platform.deepseek.com","color":"emerald"},
+        {"name":"OpenAI API","desc":"Free credits on signup. GPT-4.1 Nano at $0.10/1M tokens. Pay-as-you-go.","free":"Free credits","url":"https://platform.openai.com","color":"violet"}
+      ]
+    },
+    {
+      "id": "payments",
+      "name": "Payments",
+      "items": [
+        {"name":"Stripe","desc":"No monthly fee. 2.9% + 30\u00A2 per transaction. Payment links, subscriptions, invoices.","free":"No monthly fee","url":"https://stripe.com","color":"violet"},
+        {"name":"Lemon Squeezy","desc":"MoR for digital products. 5% + 50\u00A2 per sale. Handles global tax/VAT.","free":"No monthly fee","url":"https://lemonsqueezy.com","color":"emerald"},
+        {"name":"Paddle","desc":"MoR for SaaS. 5% + 50\u00A2. Handles global tax compliance. B2B focused.","free":"No monthly fee","url":"https://paddle.com","color":"amber"}
+      ]
+    },
+    {
+      "id": "monitoring",
+      "name": "Monitoring",
+      "items": [
+        {"name":"Sentry","desc":"5K errors/month, 1K performance units, 50MB attachments. Error tracking for devs.","free":"5K errors","url":"https://sentry.io","color":"violet"},
+        {"name":"Better Stack","desc":"Uptime monitoring with 3-min checks. Status pages. 10 monitors, 30-day logs.","free":"10 monitors","url":"https://betterstack.com","color":"emerald"},
+        {"name":"Grafana Cloud","desc":"10K metrics, 50GB logs, 50GB traces. Full observability stack.","free":"10K metrics","url":"https://grafana.com","color":"amber"}
+      ]
+    },
+    {
+      "id": "cms",
+      "name": "CMS",
+      "items": [
+        {"name":"Sanity","desc":"Headless CMS. 100K API requests/month. Real-time collaboration. Free for solo devs.","free":"100K reqs","url":"https://sanity.io","color":"amber"},
+        {"name":"Strapi","desc":"Open-source headless CMS. Self-hosted version is completely free.","free":"Self-host free","url":"https://strapi.io","color":"emerald"},
+        {"name":"Hygraph","desc":"GraphQL-native headless CMS. 1M API calls, 100GB assets. Content federation.","free":"1M calls","url":"https://hygraph.com","color":"violet"}
+      ]
+    }
+  ]
+}
