@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate tools.json is valid JSON
+        run: python3 -m json.tool tools.json > /dev/null
+
+      - name: Validate all tool entries have required fields
+        run: |
+          python3 -c "
+          import json, sys
+
+          with open('tools.json') as f:
+              data = json.load(f)
+
+          required = {'name', 'desc', 'free', 'url'}
+          errors = []
+
+          for cat in data.get('categories', []):
+              cat_name = cat.get('name', cat.get('id', 'unknown'))
+              for i, item in enumerate(cat.get('items', [])):
+                  missing = required - set(item.keys())
+                  if missing:
+                      item_name = item.get('name', f'index {i}')
+                      errors.append(
+                          f'Category \"{cat_name}\", item \"{item_name}\": '
+                          f'missing required fields: {sorted(missing)}'
+                      )
+
+          if errors:
+              print(f'Found {len(errors)} error(s):', file=sys.stderr)
+              for e in errors:
+                  print(f'  - {e}', file=sys.stderr)
+              sys.exit(1)
+          else:
+              total = sum(len(cat.get('items', [])) for cat in data.get('categories', []))
+              print(f'All {total} tool entries validated successfully.')
+          "
